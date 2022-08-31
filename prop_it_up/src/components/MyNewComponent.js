@@ -15,4 +15,4 @@ class MyNewComponent extends Component{
     }
 } 
 
-export default MyNewComponent
+export default MyNewComponent 
