@@ -13,6 +13,6 @@ class MyNewComponent extends Component{
             </div>
         );
     }
-}
+} 
 
 export default MyNewComponent 
