@@ -14,5 +14,5 @@ class MyNewComponent extends Component{
         );
     }
 } 
-
+ 
 export default MyNewComponent 
