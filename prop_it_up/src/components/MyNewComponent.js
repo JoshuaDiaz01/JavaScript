@@ -10,7 +10,7 @@ class MyNewComponent extends Component{
     }
     addAge = (e) => {
         
-        this.setState({age: this.state.age + 1});
+        this.setState({age: this.state.age+1});
     }
 
     render(){
@@ -23,10 +23,8 @@ class MyNewComponent extends Component{
                 <h1>{this.state.age} </h1>
                 <button onClick = {this.addAge }>Add age by one</button>
                 <h1>{hairColor}</h1>
-                
             </div>
         );
-        
     }
 } 
 
