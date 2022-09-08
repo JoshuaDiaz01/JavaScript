@@ -15,3 +15,6 @@ nodemon server.js
 
 <!-- to unwrap package.json -->
 npm install 
+
+<!-- faker installation -->
+npm install --save-dev @faker-js/faker
