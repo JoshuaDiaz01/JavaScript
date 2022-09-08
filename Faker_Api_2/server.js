@@ -4,7 +4,7 @@ const { faker } = require("@faker-js/faker")
 const app = express();
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+
 
 const createUser = () => {
     const newFakeUser = {
@@ -13,7 +13,7 @@ const createUser = () => {
         phoneNumber: faker.phone.number(),
         lastName: faker.name.lastName(),
         firstName: faker.name.firstName(),
-        _id: faker.datatype.uuid()
+        id: faker.datatype.uuid()
     };
     return newFakeUser;
 };
@@ -27,7 +27,7 @@ const createCompany = () => {
             city: faker.address.city(),
             state: faker.address.state(),
             country: faker.address.country(),
-            zipcode: faker.address.zipCode()
+            zip: faker.address.zipCode()
         }
     }
     return newFakeCompany;
@@ -39,10 +39,9 @@ const server = app.listen(port, () =>
 );
 
 app.get("/api", (req, res) => {
-    res.send("Hello from Faker API");
+    res.send("This route is working");
 });
 
-// CREATE
 
 
 app.get("/api/users/new", (req, res) => {
