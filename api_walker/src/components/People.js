@@ -21,7 +21,6 @@ const People =(props) => {
 
     return (
         <div>
-            hello
             <h2>Name: {person.name}</h2>
             <p>Height: {person.height}</p>
             <p>Mass: {person.mass}</p>

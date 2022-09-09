@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import { Navigate, useParams } from 'react-router-dom';
-import {useNavigate} from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 const Planet =(props) => {
     const [planets, setplanets] = useState("");
@@ -20,8 +19,7 @@ const Planet =(props) => {
     );
 
     return (
-        <div>
-            hello
+        <div style = {{color: "#29335C", textAlign: "center"}}>
             <h2>Name: {planets.name}</h2>
             <p>Height: {planets.terrain}</p>
             <p>Mass: {planets.climate}</p>

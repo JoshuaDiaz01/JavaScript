@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 
 const Error = (props) => {
     return (
-        <h1>These arent the droids you are looking for</h1>
+        <h1>These aren't the droids you are looking for</h1>
     )
 }
 
