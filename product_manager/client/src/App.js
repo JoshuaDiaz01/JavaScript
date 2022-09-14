@@ -9,6 +9,7 @@ import Update from './views/Update';
 function App() {
   return (
     <div className="App">
+      <h1>hello</h1>
       <Routes>
         <Route element={<Main/>} path="/products/" />
         <Route element={<Detail/>} path="/products/:id" />

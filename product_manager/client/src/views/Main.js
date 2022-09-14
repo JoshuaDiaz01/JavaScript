@@ -33,6 +33,7 @@ const Main = (props)=> {
 
     return(
         <div>
+            <h1>hey</h1>
             <ProductForm onSubmitProp={createProduct} initialTitle="" initialPrice="" initialDescription=""/>
             <hr/>
             <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
