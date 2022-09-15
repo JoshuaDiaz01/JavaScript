@@ -7,7 +7,7 @@ const http = axios.create({
 const MODEL = "author"
 
 export const createAuthor = async (data) => {
-    const res = await http.get(`/${MODEL}s`, data);
+    const res = await http.post(`/${MODEL}s`, data);
     return res.data;
 }
 
@@ -22,12 +22,12 @@ export const getAuthorById = async (id) => {
 }
 
 export const updateAuthorById = async (id, data) => {
-    const res = await http.get(`/${MODEL}s/${id}`, data);
+    const res = await http.put(`/${MODEL}s/${id}`, data);
     return res.data
 }
 
 export const deleteAuthorById = async (id) => {
-    const res = await http.get(`/${MODEL}s/${id}`);
+    const res = await http.delete(`/${MODEL}s/${id}`);
     return res.data
 }
 
