@@ -24,4 +24,4 @@ npm install --save-dev @faker-js/faker
 - make a folder inside project and name server 
 - run npx "create-react-app client" inside project folder
 - in client: "npm install axios react-router-dom bootstrap"
-- in server- "npm install mongoose express", "npm init -y", "npm i cors" 
+- in server- "npm install mongoose express", "npm init -y", "npm install cors" 
