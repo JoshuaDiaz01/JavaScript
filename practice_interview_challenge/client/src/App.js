@@ -15,13 +15,27 @@ function App() {
 //get users  and set them to data thats retreived 
     getUsers()
       .then((data) => setUsers(data.users))
+      .catch((error) => setUsersError(error))
+      .finally(()=> setIsLoading(false));
   }
 
 
 
   return (
 <div>
-  <button onCliick = {handleGetUsersOnClick} type="button" >Get Users</button>
+  <button onClick = {handleGetUsersOnClick} type="button" >Get Users</button>
+
+    {
+      users && (
+        <section>
+          {users.map((user) => {
+            return <User key = {user.id} user = {user}></User>
+          }
+          )}
+        </section>
+      )
+    }
+
 </div>
 
 
