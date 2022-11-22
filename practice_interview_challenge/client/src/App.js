@@ -25,6 +25,8 @@ function App() {
 <div>
   <button onClick = {handleGetUsersOnClick} type="button" >Get Users</button>
 
+
+{/* this User card is being imported from components and only showing firs name las name and user id */}
     {
       users && (
         <section>
