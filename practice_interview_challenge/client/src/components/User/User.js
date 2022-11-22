@@ -7,6 +7,7 @@ export const User = (props) => {
 
 const {email, firstName, lastName, userName} = user;
 
+//this user card will be displayed in the mapping on app.js
 return (
     <div>
         <h2>
