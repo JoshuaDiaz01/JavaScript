@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {getErrorResponse, getUser, getUsers} from "./services";
-import {User} from './components';
+import {LoadingSpinner, User} from './components';
 import {useState} from "react";
 
 function App() {
