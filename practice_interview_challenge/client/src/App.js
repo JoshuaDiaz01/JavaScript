@@ -16,7 +16,9 @@ function App() {
     getUsers()
       .then((data) => setUsers(data.users))
       .catch((error) => setUsersError(error))
-      .finally(()=> setIsLoading(false));
+      .finally(()=> setTimeout(() => {
+        setIsLoading(false);
+      }, 3000))
   }
 
 
@@ -24,6 +26,8 @@ function App() {
   return (
 <div>
   <button onClick = {handleGetUsersOnClick} type="button" >Get Users</button>
+
+  {isLoading && <LoadingSpinner/>}
 
 
 {/* this User card is being imported from components and only showing firs name las name and user id */}
