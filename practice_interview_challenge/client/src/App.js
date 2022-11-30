@@ -30,7 +30,7 @@ function App() {
   {isLoading && <LoadingSpinner/>}
 
 
-{/* this User card is being imported from components and only showing firs name las name and user id */}
+{/* this User card is being imported from components and only showing firs name last name and user id */}
     {
       users && (
         <section>
